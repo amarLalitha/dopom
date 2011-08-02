@@ -21,6 +21,10 @@ public class Activity implements Entity<Activity>{
 		
 	}
 	
+	public Activity(Integer id) {
+		this.id = id;
+	}
+	
 	public Activity(String description, Date deadline) {
 		this.name = description;
 		this.deadline = deadline;
@@ -48,10 +52,6 @@ public class Activity implements Entity<Activity>{
 		return id;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	
 	public String getName() {
 		return name;
 	}

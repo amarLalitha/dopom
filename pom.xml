@@ -8,6 +8,7 @@
 	<description>main app</description>
 	<packaging>pom</packaging>
 	<!-- This is parent pom -->
+	<!-- change from master branch -->
 	<build>
 		<plugins>
 			<plugin>

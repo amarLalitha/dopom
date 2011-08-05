@@ -7,6 +7,7 @@
 	<name>DoPomodoro Parent</name>
 	<description>main app</description>
 	<packaging>pom</packaging>
+	<!-- This is parent pom -->
 	<build>
 		<plugins>
 			<plugin>

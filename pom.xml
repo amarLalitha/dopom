@@ -24,4 +24,5 @@
 	<modules>
 		<module>dopom-domain</module>
   	</modules>
+	<!-- Adding this comment from branch -->
 </project>

@@ -7,14 +7,14 @@ import com.amar.dopom.domain.shared.Entity;
 
 public class ActivityInventory implements Entity<ActivityInventory>{
 	private String user;
+	private List<Activity> activities = new ArrayList<Activity>();
 	
 	public ActivityInventory() {}
 	public ActivityInventory(String user, List<Activity> activities) {
 		this.user = user;
 		this.activities = activities;
 	}
-	
-	private List<Activity> activities = new ArrayList<Activity>();
+		
 	public String getUser() {
 		return user;
 	}
@@ -29,10 +29,6 @@ public class ActivityInventory implements Entity<ActivityInventory>{
 		activities.add(activity);
 	}
 	
-	public void combineActivities(List<Activity> activities) {
-		//remove the activities from the activities list
-		//create a new Activity that represents combination of the activities
-	}
 	@Override
 	public boolean sameIdentityAs(ActivityInventory other) {
 		Boolean sameIdentity = false;

@@ -38,6 +38,10 @@ public class Activity implements Entity<Activity>{
 		this.status = activity.status;
 	}
 	
+	public void addPomodoro() {
+		setActualPoms(++actualPoms);
+	}
+	
 	@Override
 	public boolean sameIdentityAs(Activity other) {
 		Boolean sameIdentity = false;

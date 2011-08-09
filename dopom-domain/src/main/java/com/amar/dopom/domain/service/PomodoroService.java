@@ -8,6 +8,10 @@ import com.amar.dopom.domain.model.ActivityInventory;
 import com.amar.dopom.domain.model.ToDoToday;
 
 public interface PomodoroService {
+	
+	public ActivityInventory getActivityInventory(String user);
+	
+	public ToDoToday getToDoToday(String user, Date date);
 	/**
 	 * This method moves the given activities to today for the given user
 	 * @param user
@@ -28,5 +32,13 @@ public interface PomodoroService {
 	 * @param user
 	 */
 	public void addNewActivity(String user, String name, Date deadline);
+	
+	/**
+	 * This method sets an activity as completed
+	 * @param user
+	 * @param activity
+	 */
+	public void completeActivity(String user, Activity activity);
+	
 
 }

@@ -11,7 +11,7 @@ public class Activity implements Entity<Activity>{
 	private Boolean unPlanned;
 	private Boolean combined;
 	private Integer esimatedPoms;
-	private Integer actualPoms;
+	
 	private String status;
 	
 	/**
@@ -36,10 +36,6 @@ public class Activity implements Entity<Activity>{
 		this.combined = activity.combined;
 		this.esimatedPoms = activity.esimatedPoms;
 		this.status = activity.status;
-	}
-	
-	public void addPomodoro() {
-		setActualPoms(++actualPoms);
 	}
 	
 	@Override
@@ -98,15 +94,4 @@ public class Activity implements Entity<Activity>{
 	public void setStatus(String status) {
 		this.status = status;
 	}
-
-	public Integer getActualPoms() {
-		return actualPoms;
-	}
-
-	public void setActualPoms(Integer actualPoms) {
-		this.actualPoms = actualPoms;
-	}
-
-	
-	
 }

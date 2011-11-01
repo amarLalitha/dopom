@@ -6,16 +6,16 @@ import java.util.List;
 import com.amar.dopom.domain.shared.Entity;
 
 public class ActivityInventory implements Entity<ActivityInventory>{
-	private String user;
+	private User user;
 	private List<Activity> activities = new ArrayList<Activity>();
 	
 	public ActivityInventory() {}
-	public ActivityInventory(String user, List<Activity> activities) {
+	public ActivityInventory(User user, List<Activity> activities) {
 		this.user = user;
 		this.activities = activities;
 	}
 		
-	public String getUser() {
+	public User getUser() {
 		return user;
 	}
 	public List<Activity> getActivities() {

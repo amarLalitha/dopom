@@ -39,6 +39,4 @@ public interface PomodoroService {
 	 * @param activity
 	 */
 	public void completeActivity(String user, Activity activity);
-	
-
 }

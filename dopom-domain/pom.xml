@@ -6,10 +6,8 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.amar</groupId>
 	<artifactId>dopom-domain</artifactId>
 	<name>DoPomodoro Domain</name>
-	<version>0.0.1-SNAPSHOT</version>
 	<description>domain app</description>
 	<dependencies>
 		<dependency>
